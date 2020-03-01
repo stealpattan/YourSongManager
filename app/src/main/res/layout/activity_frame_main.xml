@@ -7,6 +7,7 @@
     tools:context=".FrameMain">
 
     <ListView
+        android:id="@+id/musicList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:ignore="MissingConstraints"
