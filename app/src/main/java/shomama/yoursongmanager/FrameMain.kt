@@ -19,6 +19,6 @@ class FrameMain : AppCompatActivity() {
 
         val array = arrayOf("shomama", "shomama2", "shomama3") as Array<String>
 
-
+        
     }
 }
