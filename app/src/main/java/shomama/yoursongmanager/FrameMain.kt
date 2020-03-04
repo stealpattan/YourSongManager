@@ -15,7 +15,7 @@ class FrameMain : AppCompatActivity() {
         setContentView(R.layout.activity_frame_main)
 
         // widget initialize
-        val musicListView = findViewById(R.id.musicList) as ListView
+        val musicListView = findViewById<ListView>(R.id.musicList)
 
         val array = arrayOf("shomama", "shomama2", "shomama3") as Array<String>
 
