@@ -3,10 +3,11 @@ package shomama.yoursongmanager
 import android.annotation.SuppressLint
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-
-// widget libs
-import android.widget.ListView
+// widgets
 import android.widget.ArrayAdapter
+import android.widget.ListView
+// utils
+import java.util.ArrayList
 
 
 class FrameMain : AppCompatActivity() {
@@ -16,13 +17,16 @@ class FrameMain : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_frame_main)
 
-        // widget initialize
-        val musicListView = findViewById<ListView>(R.id.musicList)
-
-        val array = arrayOf("shomama", "shomama2", "shomama3")
-
-        val musicListAdapter = ArrayAdapter(this, R.id.musicList, array)
-
-        musicListView.adapter = musicListAdapter
+        // example data list
+        val testList = ArrayList<Int>()
+        for (i in 0 .. 10) {
+            testList.add(i)
+        }
+        // initialize array adapter
+        val testAdapter = ArrayAdapter(this, R.layout.list_content, testList)
+        // initialize listView widget
+        val listViewWidget :ListView = findViewById(R.id.musicList)
+        // show
+        listViewWidget.adapter = testAdapter
     }
 }
