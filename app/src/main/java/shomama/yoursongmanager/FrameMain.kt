@@ -23,7 +23,7 @@ class FrameMain : AppCompatActivity() {
             testList.add(i)
         }
         // initialize array adapter
-        val testAdapter = ArrayAdapter(this, R.layout.list_content, testList)
+        val testAdapter = ArrayAdapter(this, R.layout.song_each_data, testList)
         // initialize listView widget
         val listViewWidget :ListView = findViewById(R.id.musicList)
         // show
